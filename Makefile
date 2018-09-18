@@ -3,12 +3,12 @@ LDFLAGS=-lwiringPi
 CC=gcc
 CFLAGS=-Wall -pedantic 
 
-%.o:    %.c morsecode.h
-    $(CC) $(CFLAGS) -c -ansi $<
+%.o:	%.c morsecode.h
+	$(CC) $(CFLAGS) -c -ansi $<
 
 
-main:   ${OBJS}
-    $(CC) $(CFLAGS) ${OBJS} -o main $(LDFLAGS)
+main:	${OBJS}
+	$(CC) $(CFLAGS) ${OBJS} -o main $(LDFLAGS)
     
 
 
